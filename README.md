@@ -1,2 +1,3 @@
 # Getting-and-Cleaning-Data
-Course project
+Getting and Cleaning Data Course Project
+Dmitry B. Grekov
