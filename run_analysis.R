@@ -54,3 +54,6 @@ library(reshape2)
 
 # cleanup
   rm(list=setdiff(ls(),"x.agg"))
+
+# save the results
+  write.table(x.agg, file="tidy.csv", row.names=FALSE)
