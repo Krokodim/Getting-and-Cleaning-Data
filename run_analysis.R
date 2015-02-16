@@ -11,16 +11,21 @@ library(reshape2)
   features <- features[grep(".*mean\\(\\)|.*std\\(\\)", features[,2]),]
 
 # enhance the column names
-  f <- function(s_del, s_ins) features$caption <<- gsub(s_del, s_ins, features$caption)
-  f("^t", "time-")
-  f("^f", "frequency-")
-  f("Acc", "Accelerometer")
-  f("Gyro", "Gyroscope")
-  f("Mag", "Magnitude")
-  f("BodyBody", "Body")
-  f("mean()", "MEAN")
-  f("std()", "STD")
-  rm(f)
+  tidy.names <- function (s) {
+    tide <- function (s2, s3) {if (gsub (s2,"", s) != s) s3 else ""}
+    
+    paste0(
+      tide("Body",   "body."),        tide("Gravity","gravity."),
+      tide("^t",     "time."),        tide("^f",     "freq."),
+      tide("mean()", "mean."),        tide("std()",  "sd."),
+      tide("Gyro",   "ang.velocity"), tide("Acc",    "acceleration"),
+      tide("Jerk",   ".jerk"),        tide("Mag",    ".magnitude "),
+      tide("-X",     ".x"),           tide("-Y",     ".y"),
+      tide("-Z",     ".z")
+    )
+  } 
+
+  features$caption <- lapply(features$caption, tidy.names)
 
 # read the train data and select only columns
 # with numbers from features$id
