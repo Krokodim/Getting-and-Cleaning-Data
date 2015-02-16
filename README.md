@@ -64,3 +64,5 @@ Also, after merging the subsets, activity codes are coerced into factors with le
 According to the assignment, the average for each variable should be calculated for each activity and each subject <code>x.full</code>.
 This is done by (1) melting the <code>x.full</code> dataset and then aggregating it using <code>dcast</code> function. 
 Well, not a straight through way, but works fine and fast enough.
+
+The result is set to <code>x.agg</code> variable and saved to <code>tidy.csv</code> file.
