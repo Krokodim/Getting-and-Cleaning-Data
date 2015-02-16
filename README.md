@@ -1,4 +1,5 @@
 # Getting and Cleaning Data Course Project
+
 ---
 title: "Getting and Cleaning Data"
 author: "Dmitry B. Grekov"
