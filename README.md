@@ -1,11 +1,13 @@
 # Getting and Cleaning Data Course Project
 
----
-title: "Getting and Cleaning Data"
-author: "Dmitry B. Grekov"
-date: "Monday, February 16, 2015"
-output: html_document
----
+<table>
+<tr>
+<td>title: "Getting and Cleaning Data"</td>
+<td>author: "Dmitry B. Grekov"</td>
+<td>date: "Monday, February 16, 2015"</td>
+<td>output: html_document</td>
+</tr>
+</table>
 
 ## Summary
 
