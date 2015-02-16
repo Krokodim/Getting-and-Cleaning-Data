@@ -10,9 +10,11 @@ output: html_document
 The code in the <code>Run_analysis.R</code> script file is targeted to create a tidy dataset according to the requirements  of the "Coursera: Getting and Cleaning Data" Course Project assignment.
 
 The source raw data is available by the following link:
+
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
 A full description is available at the site where the data was obtained:
+
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 
 
