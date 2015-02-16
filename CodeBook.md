@@ -21,7 +21,6 @@ The dataset in <code>tidy.csv</code> file is derived from the original dataset r
 This file provides a description for the <code>tidy.csv</code> dataset variables.
 
 ## Variable description
-<h3>Features Legend</h3>
 <table cellpadding = 10>
 <tr> <td><small> 1 </small></td> <td> time-BodyAccelerometer-MEAN()-X </td><td>Mean value of X-axis acceleration signals for body  (time domain)</td></tr>
 <tr> <td><small> 2 </small></td> <td> time-BodyAccelerometer-MEAN()-Y </td><td>Mean value of Y-axis acceleration signals for body  (time domain)</td></tr>
