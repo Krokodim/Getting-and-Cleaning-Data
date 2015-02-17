@@ -1,8 +1,10 @@
-# Getting and Cleaning Data Course Project
+#  README
 
-author: **Dmitry B. Grekov**
+project: **Getting and Cleaning Data Course Project**
 
-date: *"Monday, February 16, 2015"*
+author: Dmitry B. Grekov
+
+date: *Monday, February 16, 2015*
 
 ## Summary
 
@@ -45,7 +47,7 @@ The script contains the following steps:
 The script analyses the measurement captions from the <code>features.txt</code> file. 
 
 - filters them lo leave only those containing <code>mean()</code> or <code>std()</code> patterns
-- makes the captions more readable by replacing abbrevations ("Acc", "Gyro", ...) with appropriate full names ("Accelerometer", "Gyroscope", ...)
+- makes the captions more readable by decoding abbrevations ("Acc", "Gyro", ...), removing brackets and using dots as varaible parts separators
 - places the result into the <code>features</code> data.table with two columns:
     - **id** - sequental number in the datdaset
     - **caption** - readable column caption
@@ -66,4 +68,4 @@ According to the assignment, the average for each variable should be calculated 
 This is done by (1) melting the <code>x.full</code> dataset and then aggregating it using <code>dcast</code> function. 
 Well, not a straight through way, but works fine and fast enough.
 
-The result is set to <code>x.agg</code> variable and saved to <code>tidy.csv</code> file.
+The result is set to <code>x.agg</code> variable and saved to <code>tidy.txt</code> file.
