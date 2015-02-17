@@ -10,16 +10,16 @@ date: *Monday, February 16, 2015*
 
 
 ## Summary
-The dataset in <code>tidy.csv</code> file is derived from the original dataset representing the data collected from the accelerometers from Samsung Galaxy S smartphones. 
+The dataset in <code>tidy.txt</code> file is derived from the original dataset representing the data collected from the accelerometers from Samsung Galaxy S smartphones. 
 
 - the original dataset is describes here:<br>
     <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
-- the way it was transformed to obtain the <code>tidy.csv</code> dataset is described here:<BR>
+- the way it was transformed to obtain the <code>tidy.txt</code> dataset is described here:<BR>
     <https://github.com/Krokodim/Getting-and-Cleaning-Data/blob/master/README.md>
 
 
 
-This file provides a description for the <code>tidy.csv</code> dataset variables.
+This file provides a description for the <code>tidy.txt</code> dataset variables.
 
 ## Variable descriptions
 <p>All the numeric variables in the tidy dataset represent averages of the original dataset variables calculated for each activity type and subject. In the table below you can find both tidy variables description and their place in the original dataset.</p>
