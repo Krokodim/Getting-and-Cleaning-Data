@@ -21,7 +21,7 @@ The dataset in <code>tidy.csv</code> file is derived from the original dataset r
 
 This file provides a description for the <code>tidy.csv</code> dataset variables.
 
-## Variables descriptions
+## Variable descriptions
 <p>All the numeric variables in the tidy dataset represent averages of the original dataset variables calculated for each activity type and subject. In the table below you can find both tidy variables description and their place in the original dataset.</p>
 <table width='100%' border =1>
 <tr bgcolor=lightgray>
