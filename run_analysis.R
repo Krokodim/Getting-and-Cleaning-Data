@@ -58,4 +58,4 @@ x.agg <- dcast(molten.x.full, subject + activity ~ variable, mean)
 rm(list=setdiff(ls(),"x.agg"))
 
 # save the results
-write.table(x.agg, file="tidy.csv", row.names=FALSE, sep=",")
+write.table(x.agg, file="tidy.txt", row.names=FALSE, sep=",")
