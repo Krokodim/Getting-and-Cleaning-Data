@@ -24,9 +24,17 @@ tidy.names <- function (s) {
 
 features$caption <- lapply(features$caption, tidy.names)
 
+read.set <- function(filename){
+  read.table(
+      filename,
+      comment.char = "", 
+      colClasses= "numeric")
+      #colClasses= rep("numeric",561))  
+}
+
 # read the train data and select only columns
 # with numbers from features$id
-x.train <- read.table("UCI HAR Dataset/train/X_train.txt")[, features$id]
+x.train <- read.set("UCI HAR Dataset/train/X_train.txt")[, features$id]
 
 # set column names 
 colnames(x.train) <- features$caption
@@ -36,7 +44,7 @@ x.train <- cbind(activity = read.table("UCI HAR Dataset/train/y_train.txt",col.n
 x.train <- cbind(subject  = read.table("UCI HAR Dataset/train/subject_train.txt",col.names="subject"), x.train)
 
 # do the same with the test data
-x.test <- read.table("UCI HAR Dataset/test/X_Test.txt")[, features$id]
+x.test <- read.set("UCI HAR Dataset/test/X_Test.txt")[, features$id]
 colnames(x.test) <- features$caption
 x.test <- cbind(activity = read.table("UCI HAR Dataset/test/y_test.txt",col.names="activity"), x.test)
 x.test <- cbind(subject  = read.table("UCI HAR Dataset/test/subject_test.txt",col.names="subject"), x.test)
